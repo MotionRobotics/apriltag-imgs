@@ -9,10 +9,7 @@ convert tag36_11_00005.png \
     -gravity south -annotate +0+$((echo "300*0.25") | bc) 'april.tag.Tag36h11, id = 5, size = 200 mm'    tag.pdf
 ```
 
-Run `convert_tag_for_printing.sh` to convert tags to ready-to-print tags
+Run `convert_tag_for_printing.sh` to convert tags to ready-to-print tags. There is an example script inside tagStandard41.
 
 Add pictures to a single A4 document command:
-
-```
-montage -tile 3x3 tag36_11_00000.png tag36_11_00001.png tag36_11_00002.png tag36_11_00003.png tag36_11_00004.png tag36_11_00005.png tag36_11_00006.png tag36_11_00007.png tag36_11_00008.png calibration_apriltag.pdf
-```
+Run `put_tags_togethter_for_printing.sh` to put mulitple tags to print it out in a single A4 paper. There is an example script inside tagStandard41.
